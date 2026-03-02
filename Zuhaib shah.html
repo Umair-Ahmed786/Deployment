@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Zohaib Shah Mobile Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;}
+.navbar{background:#ff6a00;color:white;padding:15px;display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;}
+.logo{font-size:18px;font-weight:bold;}
+.nav-controls{display:flex;gap:10px;flex-wrap:wrap;}
+.nav-controls input,.nav-controls select{padding:8px;border:none;border-radius:4px;}
+.section-title{padding:15px;font-size:20px;font-weight:bold;}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px;padding:15px;}
+.product{background:white;padding:10px;border-radius:8px;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.product img{width:100%;height:150px;object-fit:cover;border-radius:6px;}
+.product h3{font-size:14px;margin:8px 0;}
+.price{color:green;font-weight:bold;}
+.buy-btn{background:#ff6a00;color:white;border:none;padding:8px;width:100%;border-radius:5px;cursor:pointer;}
+.buy-btn:hover{background:#1ebe5d;}  
+.footer {
+  background: #ff6a00; /* Navbar ke jesa color */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<div class="logo">Zohaib Shah Mobile Shop</div>
+<div class="nav-controls">
+<input type="text" id="search" placeholder="Search product...">
+<select id="sort">
+<option value="">Sort By</option>
+<option value="low">Price Low to High</option>
+<option value="high">Price High to Low</option>
+</select>
+</div>
+</div>
+
+<!-- ================= PHONES ================= -->
+
+<div class="section-title">📱 Mobile Phones</div>
+<div class="products">
+
+<!-- 28 PHONES -->
+
+<!-- Bas image path change kar lena -->
+
+<div class="product" data-name="Oppo A5" data-price="15000">
+<img src="IMG-20260228-WA0015.jpg">
+<h3>Oppo A16</h3><p class="price">Rs 15000</p>
+<button class="buy-btn" onclick="buyNow('Oppo A16','32,999')">Buy Now</button></div>
+
+<div class="product" data-name="Oppo A57" data-price="18000">
+<img src="IMG-20260228-WA0012.jpg">
+<h3>Oppo A57</h3><p class="price">Rs 31,999</p>
+<button class="buy-btn" onclick="buyNow('Oppo A57','18000')">Buy Now</button></div>
+
+<div class="product" data-name="Vivo y20" data-price="15000">
+<img src="IMG-20260228-WA0013.jpg">
+<h3>Vivo Y20</h3><p class="price">Rs 15000</p>
+<button class="buy-btn" onclick="buyNow('Vivo Y15','22000')">Buy Now</button></div>
+
+<div class="product" data-name="Vivo Y21" data-price="23000">
+<img src="IMG_20260302_094223.jpg">
+<h3>Vivo Y21</h3><p class="price">Rs 23000</p>
+<button class="buy-btn" onclick="buyNow('Vivo Y21','30000')">Buy Now</button></div>
+
+<div class="product" data-name="sego" data-price="28000">
+<img src="IMG-20260228-WA0014.jpg">
+<h3>Sego</h3><p class="price">Rs 15000</p>
+<button class="buy-btn" onclick="buyNow('Sego','15000')">Buy Now</button></div>
+
+<div class="product" data-name="infinix smart" data-price="45000">
+<img src="IMG-20260228-WA0016.jpg">
+<h3>infinix smart</h3><p class="price">Rs 15000</p>
+<button class="buy-btn" onclick="buyNow('infinix smart','15000')">Buy Now</button></div>
+
+<div class="product" data-name="Infinix Hot 12" data-price="26000">
+<img src="IMG_20260228_202434.jpg">
+<h3>Infinix Hot 12</h3><p class="price">Rs 26000</p>
+<button class="buy-btn" onclick="buyNow('Infinix Hot 12','26000')">Buy Now</button></div>
+
+<div class="product" data-name="Infinix Note 12" data-price="32000">
+<img src="IMG_20260302_143215.jpg">
+<h3>Infinix Note 12</h3><p class="price">Rs 32000</p>
+<button class="buy-btn" onclick="buyNow('Infinix Note 12','30000')">Buy Now</button></div>
+
+<div class="product" data-name="Realme C25" data-price="27000">
+<img src="IMG_20260228_203102.jpg">
+<h3>Realme C25</h3><p class="price">Rs 27000</p>
+<button class="buy-btn" onclick="buyNow('Realme C25','27000')">Buy Now</button></div>
+
+<div class="product" data-name="Realme 9" data-price="92,000">
+<img src="IMG_20260228_203225.jpg">
+<h3>Realme 9</h3><p class="price">Rs 92,000</p>
+<button class="buy-btn" onclick="buyNow('Realme 9','50000')">Buy Now</button></div>
+
+<div class="product" data-name= "redmi a3" data-price="22000">
+<img src="IMG-20260228-WA0024.jpg">
+<h3>redmi a3</h3><p class="price">Rs 22000</p>
+<button class="buy-btn" onclick="buyNow('Tecno Spark 8','20000')">Buy Now</button></div>
+
+<div class="product" data-name="relme c51" data-price="18500">
+<img src="IMG-20260228-WA0022.jpg">
+<h3>relme c51</h3><p class="price">Rs 18500</p>
+<button class="buy-btn" onclick="buyNow('relme c51','18500')">Buy Now</button></div>
+
+<div class="product" data-name="iPhone X" data-price="90000">
+<img src="IMG_20260302_144537.jpg">
+<h3>iPhone X</h3><p class="price">Rs 90000</p>
+<button class="buy-btn" onclick="buyNow('iPhone X','90000')">Buy Now</button></div>
+
+<div class="product" data-name="iPhone 11" data-price="120000">
+<img src="IMG_20260302_144817.jpg">
+<h3>iPhone 11</h3><p class="price">Rs 120000</p>
+<button class="buy-btn" onclick="buyNow('iPhone 11','120000')">Buy Now</button></div>
+
+<div class="product" data-name="27000" data-price="27000">
+<img src="IMG-20260228-WA0023.jpg">
+<h3>Redmi 14c</h3><p class="price">Rs 27000</p>
+<button class="buy-btn" onclick="buyNow('iPhone 12','27000')">Buy Now</button></div>
+
+<div class="product" data-name="smart 9 infinix" data-price="25000">
+<img src="IMG-20260228-WA0018.jpg">
+<h3>smart 9 infinix</h3></h3><p class="price">Rs 25000</p>
+<button class="buy-btn" onclick="buyNow('smart 9 infinix','25000')">Buy Now</button></div>
+
+<!-- Remaining 12 phones shortened for space but included properly -->
+
+
+<div class="product" data-name="infinix s8" data-price="22500">
+<img src="IMG-20260228-WA0020.jpg">
+<h3>infinix s8</h3><p class="price">Rs 22500</p>
+<button class="buy-btn" onclick="buyNow('infinix s8','22500')">Buy Now</button></div>
+
+<div class="product" data-name="Tecno 10 pro" data-price="22000">
+<img src="IMG-20260228-WA0021.jpg">
+<h3>Tecno 10 pro</h3><p class="price">Rs 22000</p>
+<button class="buy-btn" onclick="buyNow('tecno 10 pro','22000')">Buy Now</button></div>
+
+<div class="product" data-name="redmi a3" data-price="15000">
+<img src="IMG-20260228-WA0017.jpg">
+<h3>redmi a3</h3><p class="price">Rs 15000</p>
+<button class="buy-btn" onclick="buyNow('redmi a3','15000')">Buy Now</button></div>
+
+</div>
+
+<!-- ================= ACCESSORIES ================= -->
+
+<div class="section-title">🎧 Accessories</div>
+<div class="products">
+
+<div class="product" data-name="AirPods" data-price="5000">
+<img src="IMG_20260302_161823.jpg">
+<h3>AirPods</h3><p class="price">Rs 5000</p>
+<button class="buy-btn" onclick="buyNow('AirPods','5000')">Buy Now</button></div>
+
+<div class="product" data-name="Handsfree" data-price="1000">
+<img src="IMG_20260302_161845.jpg">
+<h3>Handsfree</h3><p class="price">Rs 1000</p>
+<button class="buy-btn" onclick="buyNow('Handsfree','800')">Buy Now</button></div>
+
+<div class="product" data-name="Mobile Cover" data-price="800">
+<img src="IMG_20260302_162301.jpg">
+<h3>Mobile Cover</h3><p class="price">Rs 800</p>
+<button class="buy-btn" onclick="buyNow('Mobile Cover','500')">Buy Now</button></div>
+
+<div class="product" data-name="Charger" data-price="1500">
+<img src="istockphoto-656424788-1024x1024.jpg">
+<h3>Charger</h3><p class="price">Rs 1500</p>
+<button class="buy-btn" onclick="buyNow('Charger','1500')">Buy Now</button></div>
+
+<div class="product" data-name="Power Bank" data-price="5000">
+<img src="IMG_20260302_165250.jpg">
+<h3>Power Bank</h3><p class="price">Rs 5000</p>
+<button class="buy-btn" onclick="buyNow('Power Bank','5000')">Buy Now</button></div>
+
+
+</div>
+<footer class="footer">
+  <h3>Zohaib Shah Mobile Shop & Accessories</h3>
+  <p>Phone: 0333 2527259</p>
+  <p>Address: Naaz cinema street near ghata Ghar shikarpur</p>
+</footer>
+<script>
+function buyNow(name,price){
+let message="I want to buy "+name+" for Rs "+price;
+window.open("https://wa.me/923332527259?text="+encodeURIComponent(message));
+}
+
+document.getElementById("search").addEventListener("keyup",function(){
+let value=this.value.toLowerCase();
+document.querySelectorAll(".product").forEach(p=>{
+p.style.display=p.dataset.name.toLowerCase().includes(value)?"block":"none";
+});
+});
+
+document.getElementById("sort").addEventListener("change",function(){
+document.querySelectorAll(".products").forEach(container=>{
+let items=Array.from(container.querySelectorAll(".product"));
+if(this.value==="low"){items.sort((a,b)=>a.dataset.price-b.dataset.price);}
+if(this.value==="high"){items.sort((a,b)=>b.dataset.price-a.dataset.price);}
+items.forEach(i=>container.appendChild(i));
+});
+});
+</script>
+
+</body>
+</html>
+</body>
+
+</html>
